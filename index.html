@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Botv2~Group~Members</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #008080;
+      color: #FFF;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #F8F8F8;
+      border-bottom: 1px solid #E5E5E5;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: #000;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #DDD;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .video-card {
+      width: calc(33.33% - 20px);
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #FFF;
+      border-radius: 4px;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .video-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .video-card h2 {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .video-card p {
+      font-size: 14px;
+      color: #555;
+    }
+    
+    .play-button {
+      cursor: pointer;
+      padding: 10px;
+      background-color: #008080;
+      color: #FFF;
+      text-align: center;
+      border-radius: 4px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Botv2 Group Members</h1>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="https://youtu.be/7YZCUpnaTfg">Rickroll</a></li>
+      <li><a href="https://youtu.be/G-eHqmPvvjI">Animan</a></li>
+      <li><a href="https://youtu.be/HPd2hiYreyc">Amongus</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="content">
+      <div class="video-card">
+        <a href="https://www.facebook.com/profile.php?id=100091460805589"><img src="https://i.imgur.com/057OyyG.jpeg" alt="Video Thumbnail"></a>
+        <h2>MD's Account Link</h2>
+        <p>MD J.</p>
+      </div>
+
+      <div class="video-card">
+        <a href="https://www.facebook.com/tadashi.hamada.526438"><img src="https://i.imgur.com/9bq1k1h.jpeg" alt="Video Thumbnail"></a>
+        <h2>Ron's Account Link</h2>
+        <p>Ronald Pancho</p>
+      </div>
+
+      <div class="video-card">
+        <a href="https://www.facebook.com/profile.php?id=100090245707722"><img src="https://i.imgur.com/IQeDO4t.jpeg" alt="Video Thumbnail"></a>
+        <h2>Void's Account Link</h2>
+        <p>Void Desu</p>
+      </div>
+
+      <div class="video-card">
+        <a href="https://www.facebook.com/prashant.limbu.7334"><img src="https://i.imgur.com/tvvnji1.jpeg" alt="Video Thumbnail"></a>
+        <h2>Prashant's Link Account</h2>
+        <p>Prashant Limbu</p>
+      </div>
+      
+     <div class="video-card">
+        <a href="https://www.facebook.com/avidek.lama"><img src="https://i.imgur.com/BFmyHKq.jpeg" alt="Video Thumbnail"></a>
+        <h2>Avidek's Account Link</h2>
+        <p>Avidek Lama</p>
+      </div>
+      
+      <div class="video-card">
+        <a href="https://www.facebook.com/profile.php?id=100088481064313"><img src="https://i.imgur.com/hGNudLj.jpeg" alt="Video Thumbnail"></a>
+        <h2>Marion's Account Link</h2>
+        <p>Marion Long</p>
+      </div>
+    </div>
+  </div>
+  
+  <audio id="myAudio">
+    <source src="https://drive.google.com/uc?id=1zlAALlxk1TnO7jXtEP_O6yvemtzA2ukA&export=download" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="play-button" id="playButton" onclick="toggleAudio()">Play Music</div>
+
+  <script>
+    var audio = document.getElementById("myAudio");
+    var playButton = document.getElementById("playButton");
+
+    function toggleAudio() {
+      if (audio.paused) {
+        audio.play();
+        playButton.textContent = "Pause Music";
+      } else {
+        audio.pause();
+        playButton.textContent = "Play Music";
+      }
+    }
+  </script>
+</body>
+</html>
